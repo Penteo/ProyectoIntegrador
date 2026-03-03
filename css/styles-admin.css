@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f2e24, #0b3b2f);
+    color: white;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar {
+    width: 240px;
+    background: linear-gradient(180deg, #1b483a, #6f9388);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-footer {
+    padding: 15px;
+}
+
+.sidebar.collapsed {
+    width: 70px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submenu li {
+    padding: 8px 0;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.9;
+    list-style: none;
+}
+.menu-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.active {
+    background: rgba(255,255,255,0.15);
+}
+
+/* ===== MAIN ===== */
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+    height: 60px;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout {
+    background: #e74c3c;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #b0d8c8;
+    margin-bottom: 30px;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.1);
+}
+
+.card h3 {
+    font-size: 13px;
+    color: #a0d3bf;
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card .desc {
+    font-size: 13px;
+    color: #c8f2e0;
+}
+
+#toggleSidebar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.summary {
+    margin-bottom: 8px;
+}
+
+#toggleSidebar:hover {
+    background: rgba(255,255,255,0.2);
+}
