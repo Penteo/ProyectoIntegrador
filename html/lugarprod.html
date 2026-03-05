@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles-admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">🌿<i>SIFEX</i></div>
+
+        <div class="menu-item active">👤 Perfil</div>
+        <li class="menu-item">
+            <details>
+                <summary class="summary">Área de trabajo</summary>
+                <ul class="submenu">
+                    <li class="menu-item">➕ Lugar de producción</li>
+                    <li class="menu-item">📋 Solicitudes</li>
+                </ul>
+            </details>
+        </li>
+
+        <div class="sidebar-footer">
+            <button id="toggleSidebar">
+                ⬅ Ocultar menú
+            </button>
+        </div>
+    </div>
+
+<!-- Main -->
+    <div class="main">
+
+        <div class="topbar">
+            <div>Productor</div>
+            <div class="user-area">
+                <div>Yeison Suárez Suárez</div>
+                <div class="logout">Salir</div>
+            </div>
+        </div>
+        <div class="titulos">
+            <h1>Gestión de Lugares de Producción</h1>
+            <hr>
+            <div>
+                <button class="btn-primary">+ Nuevo Lugar de Producción</button>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+        <div class="cards">
+
+            <div class="card">
+            <div class="card-header">
+                <h3>LP-0001</h3>
+            </div>
+
+            <p>📍 Lat: 7.5116°</p>
+            <p>📍 Lng: -75.9603°</p>
+            <p>📌 Montelíbano</p>
+
+            <div class="card-actions">
+                <button class="btn-secondary">Ver Detalles</button>
+                <button class="btn-danger">🗑</button>
+                <button class="btn-edit">✏️</button>
+            </div>
+            </div>
+
+            <div class="card">
+            <div class="card-header">
+                <h3>LP-0002</h3>
+            </div>
+
+            <p>📍 Lat: 10.2115°</p>
+            <p>📍 Lng: -78.9694°</p>
+            <p>📌 Córdoba</p>
+
+            <div class="card-actions">
+                <button class="btn-secondary">Ver Detalles</button>
+                <button class="btn-danger">🗑</button>
+                <button class="btn-edit">✏️</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+
+
+</body>
+</html>
