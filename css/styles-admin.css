@@ -8,15 +8,15 @@
 body {
     display: flex;
     height: 100vh;
-    background: linear-gradient(135deg, #0f2e24, #0b3b2f);
-    color: white;
+    background: white;
+    color: rgb(0, 0, 0);
 }
 
 /* ===== SIDEBAR ===== */
 
 .sidebar {
     width: 240px;
-    background: linear-gradient(180deg, #1b483a, #6f9388);
+    background: linear-gradient(180deg, #ffffff, #548375);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -32,8 +32,10 @@ body {
 
 .logo {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 30px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-item {
@@ -112,10 +114,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    padding: 20px;
 }
 
 .card {
-    background: rgba(255,255,255,0.05);
+    background: rgba(83, 158, 101, 0.555);
     padding: 20px;
     border-radius: 12px;
     backdrop-filter: blur(5px);
@@ -124,12 +127,12 @@ h1 {
 
 .card:hover {
     transform: translateY(-5px);
-    background: rgba(255,255,255,0.1);
+    background: rgba(172, 203, 160, 0.532);
 }
 
 .card h3 {
     font-size: 13px;
-    color: #a0d3bf;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -148,7 +151,7 @@ h1 {
     padding: 10px;
     border: none;
     background: rgba(255,255,255,0.1);
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
@@ -160,4 +163,108 @@ h1 {
 
 #toggleSidebar:hover {
     background: rgba(255,255,255,0.2);
+}
+
+.contenido-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bienvenida {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3d6b55;
+  text-align: center;
+}
+
+/* ===== CARD HEADER PARA CONGLOMERADOS ===== */
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* ===== BOTONES ===== */
+
+.btn-primary {
+  background: #3d6b55;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #2f5444;
+}
+
+.btn-secondary {
+  background: #548375;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: #3d6b55;
+}
+
+.btn-danger {
+  background: #c0392b;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-edit {
+  background: #e3bf3d;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-edit:hover {
+  background: #e79c56;
+}
+
+.btn-danger:hover {
+  background: #922b21;
+}
+
+/* ===== ACCIONES DENTRO DE CARD ===== */
+
+.card-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ===== INFO DE UBICACIÓN ===== */
+
+.card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.titulos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-top: 40px;
 }
